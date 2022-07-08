@@ -1,0 +1,55 @@
+{
+    "authors": [
+      {
+        "id": 1,
+        "name": "Harper Emerson"
+      },
+      {
+        "id": 2,
+        "name": "Kennedy Morgan"
+      },
+      {
+        "id": 3,
+        "name": "Emilia Bedilia"
+      }
+      
+    ],
+    "recipients": [
+        {
+            "id": 1,
+            "name": "Tre Smith"
+        },
+        {
+            "id": 2,
+            "name": "Grover Cleveland"
+          },
+          {
+            "id": 3,
+            "name": "Ginny Grace"
+          }
+        
+    ],
+    "topics": [ 
+        {
+            "id": 1,
+            "description": "Business"
+        },
+        {
+            "id": 2,
+            "description": "Friendly"
+        }, {
+            "id": 3,
+            "description": "Family"
+        }, {
+            "id": 4,
+            "description": "Congratulations"
+        }, {
+            "id": 5,
+            "description": "Condolences"
+        }, {
+            "id": 6,
+            "description": "Concerned"
+        }
+    ],
+    "sentLetters": []
+  }
