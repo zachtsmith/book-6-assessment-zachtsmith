@@ -1,4 +1,4 @@
-const applicationState = { bookings: [] }
+const applicationState = {}
 const API = "http://localhost:8088"
 const mainContainer = document.querySelector("#container")
 
@@ -31,7 +31,7 @@ export const getRecipients = () => {
 
 export const fetchTopics = () => {
     return fetch(`${API}/topics`)
-    .then ( response => response.topics)
+    .then ( response => response.json())
     .then( 
         (letterTopics) => {
             applicationState.topics = letterTopics
