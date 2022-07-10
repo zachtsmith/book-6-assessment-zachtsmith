@@ -1,5 +1,5 @@
 import { fetchAuthors, fetchRecipients, fetchTopics } from "./dataAccess.js"
-import { Letters } from "./PinPalApp.js"
+import { completeLetter } from "./PinPalApp.js"
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
@@ -8,16 +8,16 @@ const render = () => {
         .then(() => fetchRecipients())
         .then(
             () => {
-                mainContainer.innerHTML = Letters()
+                mainContainer.innerHTML = completeLetter()
             }
         )
 }
 
 render()
 
-mainContainer.addEventListener(
-    "stateChanged",
-    customEvent => {
-        render()
-    }
-)
+// mainContainer.addEventListener(
+//     "stateChanged",
+//     customEvent => {
+//         render()
+//     }
+// )

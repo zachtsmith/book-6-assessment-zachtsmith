@@ -4,12 +4,16 @@ export const Authors = () => {
    const authors = getAuthors()
    let html = `
         <ul>
+            
+            <select class="author" id="author">
+        <option value="">Choose</option>
             ${authors.map(author => {
                 return `<option value="${author.id}">${author.name}</option>`
             }
         ).join("")
             }
-    
+            </select>
+            
         </ul>
     `
 

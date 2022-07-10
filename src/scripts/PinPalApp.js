@@ -1,7 +1,7 @@
 import { Authors } from "./authors.js"
-import { Letter } from "./letters.js"
-import { Topics } from "./topics.js"
-import { Recipients } from "./recipients.js"
+// import { Letter } from "./letters.js"
+ import { Topics } from "./topics.js"
+ import { Recipients } from "./recipients.js"
 
 // I need to display Authors, with a choice drop down. 
 // Then have a Letter Title, with a Open Field to write text. 
@@ -16,17 +16,20 @@ export const completeLetter = () => {
             <h2>Authors</h2>
             ${Authors()}
         </section>
-        <section class="letters">
-            <h2>Letter</h2>
-            ${Letter()}
-        </section>
-        <section class="topics">
+        <section>
             <h2>Topics</h2>
             ${Topics()}
         </section>
+
         <section class="recipients">
             <h2>Recipients</h2>
             ${Recipients()}
         </section>
-    `
+    ` 
 }
+
+//         <section class="letters">
+//             <h2>Letter</h2>
+//             ${Letter()}
+//         </section>
+  
